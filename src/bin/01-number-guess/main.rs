@@ -9,10 +9,16 @@ fn main() {
     loop {
         println!("Please input your guess.");
         let mut guess = String::new();
-        
+
         io::stdin().read_line(&mut guess).expect("Failed to read line");
 
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Please enter a valid number.");
+                continue;
+            }
+        };
 
         println!("You guessed: {}", guess);
 
