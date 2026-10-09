@@ -8,6 +8,10 @@ fn main() {
     let x = x + 1; // shadowing
     println!("x = {}", x);
 
+    let mut y = 5;
+    y = y + 1; // mutable variable
+    println!("y = {}", y);
+
     let spaces = "   ";
     let spaces = spaces.len(); // shadowing
     println!("spaces = {}", spaces);
