@@ -1,3 +1,6 @@
+// Learning example: some variants/fields/bindings are declared on purpose but unused.
+#![allow(dead_code, unused_variables)]
+
 enum IpAddrKind {
     V4,
     V6,
