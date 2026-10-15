@@ -22,6 +22,6 @@ fn main(){
     let arr: [i32; 5] = [1, 2, 3, 4, 5];
     println!("{}, {}, {}, {}, {}", arr[0], arr[1], arr[2], arr[3], arr[4]);
 
-    let a: [i32; 5] = [3; 5];
+    let a: [i32; 5] = [3; 5]; // Use ; instead of , to initialize all elements to the same value
     println!("{}, {}, {}, {}, {}", a[0], a[1], a[2], a[3], a[4]);
 }
