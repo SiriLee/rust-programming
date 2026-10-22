@@ -14,7 +14,8 @@ mod front_of_house {
     }
 }
 
-use crate::front_of_house::hosting;
+// Publicly re-export `hosting` module to make it accessible from outside the crate
+pub use crate::front_of_house::hosting; // Absolute path
 // use front_of_house::hosting; // Relative path
 
 pub fn eat_at_restaurant() {
