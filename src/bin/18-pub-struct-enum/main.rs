@@ -25,7 +25,7 @@ pub fn eat_at_restaurant() {
     let mut meal = back_of_house::Breakfast::summer("Rye");
     meal.toast = String::from("Wheat");
     println!("I'd like {} toast please", meal.toast);
-    // meal.seasonal_fruit = String::from("blueberries");
+    // meal.seasonal_fruit = String::from("blueberries"); // Error! `seasonal_fruit` is private
 
     let appetizer = back_of_house::Appetizer::Soup;
 }
