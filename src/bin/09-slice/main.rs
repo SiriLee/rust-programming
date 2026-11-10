@@ -19,6 +19,11 @@ fn main() {
     let a = [1, 2, 3, 4, 5];
     let slice = &a[1..3]; // slice contains [2, 3]
     println!("Slice of array: [{}, {}]", slice[0], slice[1]);
+
+    let s = String::from("hello");
+    let slice: &str = &s; // deref coercion from &String to &str
+    // same as let slice: &str = &s[..]; or let slice: &str = s.as_str();
+    println!("Slice of string: {}", slice);
 }
 
 // Use &str as a parameter type for functions that take string slices, 
